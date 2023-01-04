@@ -1,0 +1,19 @@
+<template>
+    <!-- https://developer.salesforce.com/docs/component-library/bundle/lightning-card/example -->
+    <lightning-card  title="Instructions">
+        <p class="slds-p-horizontal_small">This list is created to explain working of Lightning Components LWC. We are taking a sample Account list and detail as the lightning component to show working on Lightning Components.</p>
+    </lightning-card>
+
+    <!-- https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation -->
+    <lightning-datatable
+            key-field="Id"
+            data={accounts.data}
+            columns={columns}
+            onrowselection={getSelectedAccount}>
+    </lightning-datatable>
+
+    <!-- https://developer.salesforce.com/docs/component-library/bundle/lightning-card/example -->
+    <lightning-card  title="Selected Accounts">
+        <p class="slds-p-horizontal_small">{selAccounts}</p>
+    </lightning-card>
+</template>

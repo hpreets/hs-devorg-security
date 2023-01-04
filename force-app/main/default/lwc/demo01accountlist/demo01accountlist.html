@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Instructions">
+        <p>This list is created to explain working of Lightning Components LWC. We are taking a sample Account list and detail as the lightning component to show working on Lightning Components.</p>
+    </lightning-card>
+
+    <lightning-datatable data={account.data} columns={columns} key-field="Id" onrowselection={getSelectedAccount}>
+    </lightning-datatable>
+
+    <lightning-card title="Selected Accounts">
+        <p>{selAccounts}</p>
+    </lightning-card>
+
+</template>
